@@ -40,6 +40,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -47,6 +48,7 @@ body {
   background-color: var(--color-white);
   color: var(--color-carbon);
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 .container {
@@ -1518,6 +1520,11 @@ body {
     justify-content: center;
   }
   
+  .hero-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
   .hero-logo-col {
     display: none; /* Hide large logo on mobile to save space */
   }
@@ -1617,6 +1624,18 @@ body {
   
   .cta-section h2 {
     font-size: 1.5rem;
+  }
+  
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .hero-stats .label {
+    white-space: normal;
+    font-size: 0.7rem;
+    line-height: 1.3;
   }
 }
 
