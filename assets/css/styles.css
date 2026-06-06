@@ -1,3 +1,21 @@
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+.checklist li {
+    padding-left: 1.8rem;
+    position: relative;
+    margin-bottom: 0.6rem;
+    text-align: left;
+}
+.checklist li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-gold);
+    font-weight: bold;
+}
 /* Variables CSS basadas en el documento de estrategia */
 :root {
   --color-carbon: #333333;
